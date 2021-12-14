@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:orientation="vertical">
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/tab_appbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background"
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:fontFamily="@font/sf"
+                        android:text="GCE A/L"
+                        android:textColor="#FFFFFF"
+                        android:textSize="30dp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/hMenu"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/omenu"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.887"
+                        app:layout_constraintStart_toEndOf="@+id/textView8"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.533" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <com.smarteist.autoimageslider.SliderLayout
+                    android:id="@+id/imageSlider00"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="85dp"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:text="Science"
+
+                        android:textColor="#FFFFFF"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/button"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="12dp"
+                        android:background="@android:color/darker_gray"/>
+
+                </LinearLayout>
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/horizontalS"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/bio"
+                                android:id="@+id/hBio"
+                                android:layout_marginLeft="10dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Biology"
+                                android:textColor="#FFFFFF"
+                                android:textStyle="bold"
+                                android:layout_gravity="center"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/chemistry"
+                                android:id="@+id/hChem"
+                                android:layout_marginLeft="10dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Chemistry"
+                                android:textColor="#FFFFFF"
+                                android:textStyle="bold"
+                                android:layout_gravity="center"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/science"
+                                android:id="@+id/hPhy"
+                                android:layout_marginLeft="10dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Physics"
+                                android:textColor="#FFFFFF"
+                                android:textStyle="bold"
+                                android:layout_gravity="center"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/math"
+                                android:id="@+id/hComb"
+                                android:layout_marginLeft="10dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Combine Maths"
+                                android:textColor="#FFFFFF"
+                                android:textStyle="bold"
+                                android:layout_gravity="center"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:id="@+id/hAgri"
+                                android:src="@drawable/agriculture"
+                                android:layout_marginLeft="10dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Agri"
+                                android:textColor="#FFFFFF"
+                                android:textStyle="bold"
+                                android:layout_gravity="center"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/Commerce"
+                        android:layout_width="85dp"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:text="Commerce"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/button"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="12dp"
+                        android:background="@android:color/darker_gray"/>
+
+                </LinearLayout>
+                <HorizontalScrollView
+                    android:id="@+id/hori2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:id="@+id/hBs"
+                                android:src="@drawable/graph"
+                                android:layout_marginLeft="10dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Business \n Studies"
+                                android:textColor="#FFFFFF"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:layout_gravity="center"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/cash"
+                                android:id="@+id/hEcon"
+                                android:layout_marginLeft="10dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Economy"
+                                android:textColor="#FFFFFF"
+                                android:textStyle="bold"
+                                android:layout_gravity="center"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:id="@+id/hAcc"
+                                android:src="@drawable/coin"
+                                android:layout_marginLeft="10dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Accounting"
+                                android:textColor="#FFFFFF"
+                                android:textStyle="bold"
+                                android:layout_gravity="center"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/Technology"
+                        android:layout_width="85dp"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:text="Technology"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/button"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="12dp"
+                        android:background="@android:color/darker_gray"/>
+
+                </LinearLayout>
+                <HorizontalScrollView
+                    android:id="@+id/hori3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/sc"
+                                android:id="@+id/hSTech"
+                                android:layout_marginLeft="10dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Science for \n technology"
+                                android:textColor="#FFFFFF"
+                                android:textStyle="bold"
+                                android:layout_gravity="center"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:id="@+id/hEng"
+                                android:src="@drawable/automation"
+                                android:layout_marginLeft="10dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Engineering \n technology"
+                                android:textColor="#FFFFFF"
+                                android:gravity="center"
+                                android:textStyle="bold"
+                                android:layout_gravity="center"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:src="@drawable/sensor"
+                                android:id="@+id/hBioTech"
+                                android:layout_marginLeft="10dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Bio system \n technology"
+                                android:textColor="#FFFFFF"
+                                android:textStyle="bold"
+                                android:layout_gravity="center"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/Arts"
+                        android:layout_width="85dp"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:text="Arts"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:background="@drawable/button"/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="12dp"
+                        android:background="@android:color/darker_gray"/>
+
+                </LinearLayout>
+                <HorizontalScrollView
+                    android:id="@+id/hori4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_marginLeft="10dp"
+                                android:id="@+id/hLogic"
+                                android:src="@drawable/llogic" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Logic"
+                                android:textColor="#FFFFFF"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:id="@+id/hSinhala"
+                                android:layout_marginLeft="10dp"
+                                android:src="@drawable/unnamed" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Sinhala"
+                                android:textColor="#FFFFFF"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_marginLeft="10dp"
+                                android:id="@+id/hPoli"
+                                android:src="@drawable/pollll" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Political"
+                                android:textColor="#FFFFFF"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_marginLeft="10dp"
+                                android:id="@+id/hIt"
+                                android:src="@drawable/privacy" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Information \n technology"
+                                android:textColor="#FFFFFF"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_marginLeft="10dp"
+                                android:id="@+id/hGeo"
+                                android:src="@drawable/geo" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Geography"
+                                android:textColor="#FFFFFF"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:layout_marginLeft="10dp"
+                                android:id="@+id/hMedia"
+                                android:src="@drawable/media" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="Media"
+                                android:textColor="#FFFFFF"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
+
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

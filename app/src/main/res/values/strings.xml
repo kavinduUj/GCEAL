@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">GCE A/L</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ApplicationId">ca-app-pub-5127020961369751~1272846816</string>
+    <string name="BanerUnit">ca-app-pub-5127020961369751/4865619228</string>
+    <string name="InterstitialUnit">ca-app-pub-5127020961369751/5029270758</string>
+    <string name="privacy">http://appflavorsz.com/privacy/</string>
+    <string name="publisherId">pub-5127020961369751</string>
+
+
+</resources>

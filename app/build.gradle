@@ -1,0 +1,95 @@
+buildscript {
+    repositories {
+        maven { url 'https://plugins.gradle.org/m2/' }
+    }
+    dependencies {
+        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:[0.12.6, 0.99.99]'
+    }
+}
+apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+
+repositories {
+    maven { url 'https://maven.google.com' }
+}
+
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.1"
+
+
+
+    defaultConfig {
+        applicationId "com.appflavorsz.gceal"
+        minSdkVersion 19
+        targetSdkVersion 30
+        versionCode 4
+        versionName "1.3"
+        multiDexEnabled true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        manifestPlaceholders = [
+                onesignal_app_id: '6ec4e6d4-a0f6-4dda-8dad-2b3d3c983d58',
+                // Project number pulled from dashboard, local value is ignored.
+                onesignal_google_project_number: 'REMOTE'
+        ]
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.firebase:firebase-auth:16.0.5'
+    implementation 'com.google.firebase:firebase-database:16.0.4'
+    implementation 'com.google.firebase:firebase-storage:16.0.4'
+    implementation 'com.google.android.material:material:1.3.0'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    //addLibraries
+
+    implementation 'com.github.smarteist:autoimageslider:1.2.0'
+    implementation 'com.github.bumptech.glide:glide:4.6.1'
+
+    implementation "com.android.support:cardview-v7:30.0.0"
+    implementation "com.android.support:recyclerview-v7:30.0.0"
+    implementation 'com.android.support:design:30.0.0'
+    implementation 'com.android.support:appcompat-v7:30.0.0' //changed 29 to 30
+
+
+
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.pixplicity.easyprefs:library:1.9.0'
+    implementation 'com.firebaseui:firebase-ui-database:2.3.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    implementation 'com.github.barteksc:android-pdf-viewer:1.6.0'
+
+    implementation 'com.skyfishjy.ripplebackground:library:1.0.1'
+
+    implementation 'com.onesignal:OneSignal:[3.15.0, 3.99.99]'
+    implementation 'androidx.annotation:annotation:1.0.0'
+    implementation 'com.facebook.android:audience-network-sdk:6.+'
+    implementation 'com.github.jumadeveloper:networkmanager:0.0.2'
+
+}

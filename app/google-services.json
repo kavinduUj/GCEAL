@@ -1,0 +1,114 @@
+{
+  "project_info": {
+    "project_number": "399561527363",
+    "firebase_url": "https://gceal-4dd8b.firebaseio.com",
+    "project_id": "gceal-4dd8b",
+    "storage_bucket": "gceal-4dd8b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:399561527363:android:2797de12f0237e6e57c4f6",
+        "android_client_info": {
+          "package_name": "com.appflavorsz.gceal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "399561527363-bj2f0kgtq0p59mv7aac6a4umc7ci827l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQXsUNSm9FKGDbKpK-PKBwwN4MVnBywK4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "399561527363-bj2f0kgtq0p59mv7aac6a4umc7ci827l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:399561527363:android:b65945b3725c7d9d57c4f6",
+        "android_client_info": {
+          "package_name": "com.education.gceal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "399561527363-f95dtas7par3fnpocc44as69i6df87n8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.education.gceal",
+            "certificate_hash": "a55d940c46db3c1650f0b106a569ad3216a38375"
+          }
+        },
+        {
+          "client_id": "399561527363-bj2f0kgtq0p59mv7aac6a4umc7ci827l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQXsUNSm9FKGDbKpK-PKBwwN4MVnBywK4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "399561527363-bj2f0kgtq0p59mv7aac6a4umc7ci827l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:399561527363:android:01dc681729a752a357c4f6",
+        "android_client_info": {
+          "package_name": "com.edugceal.gcealadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "399561527363-3975emqqd8d5htq1m1gtteaus762685q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.edugceal.gcealadmin",
+            "certificate_hash": "a55d940c46db3c1650f0b106a569ad3216a38375"
+          }
+        },
+        {
+          "client_id": "399561527363-bj2f0kgtq0p59mv7aac6a4umc7ci827l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQXsUNSm9FKGDbKpK-PKBwwN4MVnBywK4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "399561527363-bj2f0kgtq0p59mv7aac6a4umc7ci827l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
